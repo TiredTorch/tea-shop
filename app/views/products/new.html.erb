@@ -1,0 +1,16 @@
+<h2>Add new tea product</h2>
+<br>
+<br>
+<%= form_for :product, url: products_path do |f| %>
+	<p>
+		<h4>Title</h4>
+		<%= f.text_field(:title, {:class => "form-control"}) %>
+	</p>
+	<p>
+		<h4>Price</h4>
+		<%= f.text_field(:price, {:class => "form-control"}) %>
+	</p>
+	<p>
+		<%= f.submit({:class => "btn btn-success"}) %>
+	</p>
+<% end %>

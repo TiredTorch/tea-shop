@@ -1,1 +1,8 @@
-<div>Aboba</div>
+<h2>All tea products</h2>
+<br>
+<br>
+<% @products.each do |product| %>
+	<div class="alert alert-success">
+		<h3><%= link_to "#{product.title}", product_path(product.id) %></h3>
+	</div>
+<% end %>
